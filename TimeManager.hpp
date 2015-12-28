@@ -9,7 +9,7 @@
     #include <sys/time.h>
 #endif
 
-namespace Core
+namespace Flappy
 {
     class TimeManager
     {

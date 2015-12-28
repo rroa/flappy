@@ -5,7 +5,7 @@
 //
 #include <cstdlib>
 
-namespace Core
+namespace Flappy
 {
     TimeManager::TimeManager()
     {

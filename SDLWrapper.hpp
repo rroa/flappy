@@ -16,7 +16,7 @@
 #include <iostream>
 #include <string>
 
-namespace Core
+namespace Flappy
 {
     class TimeManager;
     class SDLWrapper
@@ -64,7 +64,6 @@ namespace Core
         // Heartbeat
         //
         void OnExecute              ( );
-        void OnLoop                 ( );
 
         /* =============================================================
          * INLINE FUNCTIONS
@@ -82,11 +81,12 @@ namespace Core
         int                         m_height;
         unsigned int                m_nUpdates;
         double                      m_deltaTime;
-        SimulationState::State            m_state;
+        SimulationState::State      m_state;
 
         // SDL
         //
-        SDL_Surface*                m_mainwindow;
+        SDL_Window*                 m_mainwindow;
+        SDL_GLContext               m_maincontext;
 
         // Utilities
         //
